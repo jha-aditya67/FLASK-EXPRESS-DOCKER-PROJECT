@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Form</title>
+</head>
+<body>
+
+    <h2>Student Form</h2>
+
+    <form action="/submit" method="POST">
+
+        <label>Name</label><br>
+        <input type="text" name="name" required>
+        <br><br>
+
+        <label>Email</label><br>
+        <input type="email" name="email" required>
+        <br><br>
+
+        <button type="submit">Submit</button>
+
+    </form>
+
+    <% if(result){ %>
+        <h3>Response</h3>
+
+        <p><%= result.message %></p>
+        <p>Name: <%= result.name %></p>
+        <p>Email: <%= result.email %></p>
+    <% } %>
+
+</body>
+</html>

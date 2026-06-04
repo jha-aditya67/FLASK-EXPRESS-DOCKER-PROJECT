@@ -15,7 +15,7 @@ app.get('/', (req, res) => {
 app.post('/submit', async (req, res) => {
     try {
         const response = await axios.post(
-            'http://backend:5000/submit',
+            'http://51.20.128.93:5000/submit',
             {
                 name: req.body.name,
                 email: req.body.email
